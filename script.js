@@ -29,11 +29,8 @@ function fadeChecklist() {
     const slideTop = item.getBoundingClientRect().top;
 
     if (slideTop < triggerBottom) {
-      item.classList.remove("hide-img");
       item.classList.add("fade-in");
-    } else {
-      item.classList.remove("fade-in");
-      item.classList.add("hide-img");
+      item.style.opacity = 1;
     }
   });
 }
@@ -50,11 +47,8 @@ function fadeImg() {
     const slideTop = img.getBoundingClientRect().top;
 
     if (slideTop < triggerBottom) {
-      img.classList.remove("hide-img");
       img.classList.add("fade-in");
-    } else {
-      img.classList.remove("fade-in");
-      img.classList.add("hide-img");
+      img.style.opacity = 1;
     }
   });
 }

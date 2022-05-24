@@ -326,6 +326,7 @@ CHECKLIST SECTION
   align-items: center;
   width: 80%;
   margin: 50px auto 0 auto;
+  opacity: 0;
 }
 
 .tick {
@@ -428,6 +429,7 @@ OUR SERVICES SECTION
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   width: 100%;
+  opacity: 0;
 }
 
 .card-wave {
@@ -577,6 +579,7 @@ p.author {
   background: #e1e1e1;
   background-image: url(images/quote-background.png);
   background-size: cover;
+  position: relative;
 }
 
 .quote-container {
@@ -688,8 +691,52 @@ small {
   text-shadow: 0px 0px 20px #242424;
 }
 
-.footer-wave {
+/* FOOTER WAVE */
+
+/* .footer-wave {
   display: none;
+} */
+
+.quote-section-2 {
+  position: relative;
+  background-color: var(--dark-blue);
+  background-image: none;
+}
+.quote-container {
+  width: 100%;
+  padding-top: 150px;
+}
+
+.form-container {
+  margin: 0 auto;
+}
+
+.quote-container h2 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+
+.quote-container p {
+  font-size: 1rem;
+}
+
+.quote-container a {
+  font-size: 1.1rem;
+}
+form {
+  width: 80%;
+}
+
+.submit-btn {
+  background-color: var(--light-blue);
+}
+
+.social-links {
+  justify-content: space-evenly;
+}
+
+.footer-wave {
+  display: block;
 }
 
 /* ========
@@ -729,18 +776,6 @@ small {
   }
 }
 
-/* .fade-out {
-  animation: fade-out 1.5s linear 1;
-}
-@keyframes fade-in {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-} */
-
 .wave {
   position: absolute;
   top: 0;
@@ -765,7 +800,7 @@ small {
 /* ========
  MEDIA QUERIES
  ======== */
-@media (min-width: 650px) and (max-width: 921px) {
+@media (min-width: 650px) and (max-width: 819px) {
   .menu-btn {
     display: none;
   }
@@ -820,7 +855,6 @@ small {
   .about-txt {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
   }
 
   .about-txt h2 {
