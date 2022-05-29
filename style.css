@@ -825,7 +825,8 @@ form {
     color: var(--light-blue);
   }
 
-  .header .header-text h1 {
+  .header .header-text h1,
+  .header-text span {
     font-size: 1.5rem;
   }
 
