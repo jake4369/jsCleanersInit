@@ -837,7 +837,12 @@ form {
   }
 
   .header-text {
-    display: none;
+    top: 50%;
+  }
+
+  h1,
+  .h1-span {
+    font-size: 1.25rem;
   }
 }
 
@@ -869,11 +874,11 @@ form {
   }
 
   .header-text {
-    top: 10%;
+    top: 45%;
   }
 
   .header-text h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .header-quote {
@@ -928,11 +933,12 @@ form {
   }
 
   .header-text {
-    top: 10%;
+    top: 50%;
   }
 
-  .header-text h1 {
-    font-size: 3rem;
+  .header-text h1,
+  .header-text span {
+    font-size: 1.5rem !important;
   }
 
   .header-quote {
@@ -1036,16 +1042,21 @@ form {
 @media (min-width: 992px) {
   /* HEADER */
   .header {
-    height: 70vh;
+    height: 82vh;
   }
 
   .header-text {
-    display: none;
-    top: 45%;
+    display: block;
+    top: 50%;
   }
 
-  .header-text h1 {
-    font-size: 4rem;
+  .header-text {
+    display: block;
+  }
+
+  .header-text h1,
+  .header-text .h1-span {
+    font-size: 2rem !important;
   }
 
   .header-quote {
@@ -1161,9 +1172,20 @@ form {
 
 @media (min-width: 1200px) {
   .header {
+    height: 82vh;
     width: 100%;
     background-image: url(images/new_header.png);
     background-size: 100% 100%;
+  }
+
+  .header-text {
+    display: block;
+    top: 45%;
+  }
+
+  .header-text h1,
+  .header-text .h1-span {
+    font-size: 2.5rem !important;
   }
 
   .header-quote {
@@ -1181,9 +1203,17 @@ form {
     left: -20px;
   }
 
-  .about-txt h2,
-  .about-txt span,
+  h2,
   span {
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
+  }
+
+  .review-title {
+    font-size: 1.5rem !important;
+  }
+
+  .service-p,
+  .mySlides p {
+    font-size: 1.25rem;
   }
 }
